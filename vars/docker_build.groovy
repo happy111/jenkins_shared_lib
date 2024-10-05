@@ -1,5 +1,3 @@
-def call(String ProjectName){
-
-                 sh 'docker build -t' ProjectName':latest .'
-
+def call(String projectName) {
+    sh "docker build -t ${projectName}:latest ."
 }
